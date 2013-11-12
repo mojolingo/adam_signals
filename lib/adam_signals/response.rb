@@ -2,11 +2,13 @@ require 'json'
 require 'virtus'
 
 class AdamSignals::Response
-  include Virtus::ValueObject
+  include Virtus.value_object
 
-  attribute :target_type, Symbol
-  attribute :target_address, String
-  attribute :body, String
+  values do
+    attribute :target_type, Symbol
+    attribute :target_address, String
+    attribute :body, String
+  end
 
   def self.from_json(json)
     new JSON.parse(json)

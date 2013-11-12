@@ -1,6 +1,12 @@
+[![Gem Version](https://badge.fury.io/rb/adam_signals.png)](https://rubygems.org/gems/adam_signals)
+[![Build Status](https://secure.travis-ci.org/mojolingo/adam_signals.png?branch=develop)](http://travis-ci.org/mojolingo/adam_signals)
+[![Dependency Status](https://gemnasium.com/mojolingo/adam_signals.png?travis)](https://gemnasium.com/mojolingo/adam_signals)
+[![Code Climate](https://codeclimate.com/github/mojolingo/adam_signals.png)](https://codeclimate.com/github/mojolingo/adam_signals)
+[![Coverage Status](https://coveralls.io/repos/mojolingo/adam_signals/badge.png?branch=develop)](https://coveralls.io/r/mojolingo/adam_signals)
+
 # AdamSignals
 
-Common message formats exchanged between Adam Snark Rabbit organs
+Common message formats exchanged between Adam Snark Rabbit organs. You can use this gem to help you implement components which interface with Adam.
 
 ## Installation
 
@@ -20,12 +26,19 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
-## Contributing
+## Links:
+* [Source](https://github.com/mojolingo/adam_signals)
+* [Documentation](http://rdoc.info/gems/adam_signals/frames)
+* [Bug Tracker](https://github.com/mojolingo/adam_signals/issues)
+* [CI](https://travis-ci.org/#!/mojolingo/adam_signals)
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+## Note on Patches/Pull Requests
 
-Copyright (c) 2013 Mojo Lingo LLC
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  * If you want to have your own version, that is fine but bump version in a commit by itself so I can ignore when I pull
+* Send me a pull request. Bonus points for topic branches.
+
+Copyright (c) 2013 Mojo Lingo LLC. MIT licence (see LICENSE for details).
