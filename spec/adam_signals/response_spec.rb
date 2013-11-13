@@ -10,6 +10,7 @@ describe AdamSignals::Response do
   its(:target_type)     { should == target_type }
   its(:target_address)  { should == target_address }
   its(:body)            { should == body }
+  its(:action)            { should == 'translate' }
 
   it "should be able to encode to and decode from JSON" do
     subject.should eql(described_class.from_json(subject.to_json))

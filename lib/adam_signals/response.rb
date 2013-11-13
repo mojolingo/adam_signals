@@ -8,6 +8,7 @@ class AdamSignals::Response
     attribute :target_type, Symbol
     attribute :target_address, String
     attribute :body, String
+    attribute :action, String, default: 'translate'
   end
 
   def self.from_json(json)
