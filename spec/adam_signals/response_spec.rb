@@ -4,12 +4,14 @@ describe AdamSignals::Response do
   let(:target_type)     { :xmpp }
   let(:target_address)  { 'foo@bar.com' }
   let(:body)            { 'Hello there' }
+  let(:action)          { 'greet' }
 
-  subject { described_class.new target_type: target_type, target_address: target_address, body: body }
+  subject { described_class.new target_type: target_type, target_address: target_address, body: body, action: action }
 
   its(:target_type)     { should == target_type }
   its(:target_address)  { should == target_address }
   its(:body)            { should == body }
+  its(:action)          { should == action }
 
   it "should be able to encode to and decode from JSON" do
     subject.should eql(described_class.from_json(subject.to_json))
