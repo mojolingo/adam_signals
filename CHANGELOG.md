@@ -1,4 +1,5 @@
 # [develop](https://github.com/mojolingo/adam_signals)
+  * Feature: Allow messages to contain their interpretation
 
 # [1.1.0](https://github.com/mojolingo/adam_signals/compare/v1.0.0...v1.1.0) - [2013-12-17](https://rubygems.org/gems/adam_signals/versions/1.1.0)
   * Feature: Added an `action` attribute to `Response`

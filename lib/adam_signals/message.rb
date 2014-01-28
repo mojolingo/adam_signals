@@ -1,6 +1,13 @@
 require 'json'
 require 'virtus'
 
+class Json < Virtus::Attribute
+  def coerce(value)
+    return unless value
+    value.is_a?(::Hash) ? value : JSON.parse(value)
+  end
+end
+
 class AdamSignals::Message
   include Virtus.value_object
 
@@ -9,6 +16,7 @@ class AdamSignals::Message
     attribute :source_address, String
     attribute :auth_address, String
     attribute :body, String
+    attribute :interpretation, Json
     attribute :user, Hash
   end
 
